@@ -1,0 +1,68 @@
+﻿
+@model ML.AlumnoMateria
+@{
+    ViewBag.Title = "Materia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Materia</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Materia</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Seleccione + para registrar a un materia ... o eliminar para borrar</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+
+            @Html.ActionLink("+", "Form", "Materia", htmlAttributes: new { @class = "btn btn-success" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+@using (Html.BeginForm("AlumnoMateriaAdd", "AlumnoMateria", FormMethod.Post, new { enctype = "multipart/form-data" })) { 
+@Html.TextBoxFor(model => model.Alumno.IdAlumno, new { @class = "hidden form-control", autocomplete = "off" })
+            <table class="table table-bordered table-responsive">
+                <thead>
+                    <tr>
+                        <td>Agregar</td>
+                        <td class="hidden">IdMateria</td>
+                        <td>Nombre</td>
+                        <td>Costo</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (ML.Materia alumnoMateria in Model.alumnoMaterias)
+                    {
+                        <tr>
+                            <td>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="alumnoMaterias" value="@alumnoMateria.IdMateria">
+                                </label>
+                            </td>
+                            <td class="hidden">@alumnoMateria.IdMateria</td>
+                            <td>@alumnoMateria.Nombre</td>
+                            <td>@alumnoMateria.Costo</td>
+                           
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+                <a class="btn btn-danger " href="@Url.Action("Asignadas", "AlumnoMateria", new { IdAlumno = Model.Alumno.IdAlumno })">Regresar</a>
+                <input type="submit" value="Guardar" />
+}
+        </div>
+    </div>
+</div>
+
+
+
+
+

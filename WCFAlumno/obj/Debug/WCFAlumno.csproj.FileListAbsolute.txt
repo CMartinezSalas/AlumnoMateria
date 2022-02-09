@@ -1,0 +1,16 @@
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\WCFAlumno.dll.config
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\WCFAlumno.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\WCFAlumno.pdb
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\BL.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\EntityFramework.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\EntityFramework.SqlServer.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\ML.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\DL.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\BL.pdb
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\ML.pdb
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\EntityFramework.xml
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\EntityFramework.SqlServer.xml
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\bin\DL.pdb
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\obj\Debug\WCFAlumno.csprojResolveAssemblyReference.cache
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\obj\Debug\WCFAlumno.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCFAlumno\obj\Debug\WCFAlumno.pdb

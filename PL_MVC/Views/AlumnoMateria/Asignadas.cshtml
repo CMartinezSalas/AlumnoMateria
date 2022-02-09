@@ -1,0 +1,94 @@
+﻿@model ML.AlumnoMateria
+@{
+    ViewBag.Title = "AlumnoMateria";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Alumno</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Alumno</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Seleccione + para registrar una Materia ... o eliminar para borrar</h5>
+            <br />
+
+            <div class="form-left">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.LabelFor(model => model.Alumno.IdAlumno, new { @class = "hidden" })
+                        @Html.TextBoxFor(model => model.Alumno.IdAlumno, new { @class = "hidden form-control", autocomplete = "off" })
+                        @Html.ValidationMessageFor(model => model.Alumno.IdAlumno)
+                        @*hidden*@
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.LabelFor(model => model.Alumno.Nombre)
+                        @Html.TextBoxFor(model => model.Alumno.Nombre, new { @class = "form-control", @id = "txtNombre" })
+                        @Html.ValidationMessageFor(model => model.Alumno.Nombre, null, new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.LabelFor(model => model.Alumno.ApellidoPaterno)
+                        @Html.TextBoxFor(model => model.Alumno.ApellidoPaterno, new { @class = "form-control", @id = "txtApellidoPaterno" })
+                        @Html.ValidationMessageFor(model => model.Alumno.ApellidoPaterno, null, new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.LabelFor(model => model.Alumno.ApellidoMaterno)
+                        @Html.TextBoxFor(model => model.Alumno.ApellidoMaterno, new { @class = "form-control", @id = "txtApellidoMaterno" })
+                        @Html.ValidationMessageFor(model => model.Alumno.ApellidoMaterno, null, new { @class = "text-danger" })
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <a class="btn btn-success glyphicon glyphicon-plus" href="@Url.Action("NoAsignadas", "AlumnoMateria", new { IdAlumno= Model.Alumno.IdAlumno })"></a>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered table-responsive">
+                    <thead>
+                        <tr>
+                            <td>Seleccionar</td>
+                            <td class="hidden">IdAlumnoMateria</td>
+                            <td>Materia</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (ML.AlumnoMateria alumnoMateria in Model.alumnoMaterias)
+                        {
+                            <tr>
+                                <td><a class="btn btn-danger glyphicon glyphicon-remove" href="@Url.Action("AlumnoMateriaDelete", "AlumnoMateria", new { IdAlumnoMateria = alumnoMateria.IdAlumnoMateria })"></a></td>
+                                <td class="hidden">@alumnoMateria.IdAlumnoMateria</td>
+                                <td>@alumnoMateria.Materia.Nombre</td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                @*<input type="submit" value="Regresar" class="btn btn-success" />*@
+                <a class="btn btn-danger " href="@Url.Action("GetAll", "AlumnoMateria", new { IdAlumno = Model.Alumno.IdAlumno })">Regresar</a>
+            </div>
+        </div>
+    </div>
+    </div>
+

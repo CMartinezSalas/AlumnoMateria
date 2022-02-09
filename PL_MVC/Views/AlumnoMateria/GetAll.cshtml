@@ -1,0 +1,60 @@
+﻿@model ML.Alumno
+@{
+    ViewBag.Title = "Alumno";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Alumno</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Materias de Alumnos</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Seleccione a un Alumno para acceder a sus materias</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered table-responsive">
+                <thead>
+                    <tr>
+                        <td>Seleccionar</td>
+                        <td class="hidden">IdAlumno</td>
+                        <td>Nombre</td>
+                        <td>ApellidoPaterno</td>
+                        <td>ApellidoMaterno</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (ML.Alumno alumno in Model.Alumnos)
+                    {
+                        <tr>
+                            <td><a class="btn btn-warning glyphicon glyphicon-edit" href="@Url.Action("Asignadas", "AlumnoMateria", new { IdAlumno = alumno.IdAlumno })"></a></td>
+                            <td class="hidden">@alumno.IdAlumno</td>
+                            <td>@alumno.Nombre</td>
+                            <td>@alumno.ApellidoPaterno</td>
+                            <td>@alumno.ApellidoMaterno</td>
+
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+        @*<a class="btn btn-danger " href="@Url.Action("Asignadas", "AlumnoMateria", new { IdAlumno = Model.IdAlumno })">Regresar</a>*@
+        @*"Home", "Index", "Home"*@
+        @*<div class="form-group">
+            <div class="col-md-3">
+                @Html.ActionLink("Regresar", "Index", "Home", htmlAttributes: new { @class = "btn btn-danger" })
+            </div>
+        </div>*@
+    </div>
+</div>

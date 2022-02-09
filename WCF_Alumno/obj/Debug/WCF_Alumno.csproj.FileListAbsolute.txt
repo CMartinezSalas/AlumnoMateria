@@ -1,0 +1,14 @@
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\bin\WCF_Alumno.dll.config
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\bin\WCF_Alumno.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\bin\WCF_Alumno.pdb
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\bin\BL.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\bin\ML.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\bin\DL.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\bin\EntityFramework.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\bin\BL.pdb
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\bin\ML.pdb
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\bin\DL.pdb
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\bin\EntityFramework.xml
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\obj\Debug\WCF_Alumno.csprojResolveAssemblyReference.cache
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\obj\Debug\WCF_Alumno.dll
+C:\Users\Alien8\Documents\Visual Studio 2013\Projects\ExamenDigiPro\WCF_Alumno\obj\Debug\WCF_Alumno.pdb
